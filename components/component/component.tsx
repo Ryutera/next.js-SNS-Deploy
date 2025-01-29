@@ -286,7 +286,7 @@ export function Component() {
   );
 }
 
-function BellIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
+function BellIcon(props:SVGProps<SVGSVGElement> ) {
   return (
     <svg
       {...props}
