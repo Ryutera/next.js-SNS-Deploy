@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import { JSX, SVGProps } from "react";
 
 export function Component() {
   return (
@@ -285,7 +286,7 @@ export function Component() {
   );
 }
 
-function BellIcon(props) {
+function BellIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -305,7 +306,7 @@ function BellIcon(props) {
   );
 }
 
-function BookmarkIcon(props) {
+function BookmarkIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -324,7 +325,7 @@ function BookmarkIcon(props) {
   );
 }
 
-function ClockIcon(props) {
+function ClockIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -344,7 +345,7 @@ function ClockIcon(props) {
   );
 }
 
-function CompassIcon(props) {
+function CompassIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -364,7 +365,7 @@ function CompassIcon(props) {
   );
 }
 
-function HeartIcon(props) {
+function HeartIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -383,7 +384,7 @@ function HeartIcon(props) {
   );
 }
 
-function HomeIcon(props) {
+function HomeIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -403,7 +404,7 @@ function HomeIcon(props) {
   );
 }
 
-function LogInIcon(props) {
+function LogInIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -424,7 +425,7 @@ function LogInIcon(props) {
   );
 }
 
-function MailIcon(props) {
+function MailIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -444,7 +445,7 @@ function MailIcon(props) {
   );
 }
 
-function MessageCircleIcon(props) {
+function MessageCircleIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -463,7 +464,7 @@ function MessageCircleIcon(props) {
   );
 }
 
-function SearchIcon(props) {
+function SearchIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -483,7 +484,7 @@ function SearchIcon(props) {
   );
 }
 
-function SendIcon(props) {
+function SendIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -503,7 +504,7 @@ function SendIcon(props) {
   );
 }
 
-function SettingsIcon(props) {
+function SettingsIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -523,7 +524,7 @@ function SettingsIcon(props) {
   );
 }
 
-function Share2Icon(props) {
+function Share2Icon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -546,7 +547,7 @@ function Share2Icon(props) {
   );
 }
 
-function UserIcon(props) {
+function UserIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
