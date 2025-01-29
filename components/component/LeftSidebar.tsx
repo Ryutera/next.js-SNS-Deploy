@@ -26,9 +26,12 @@ const navItems = [
 export default async function LeftSidebar() {
 
   const {userId} = auth()
+  if (!userId) {
+    return
+  }
   const currentUser = await prisma.user.findUnique({
     where:{
-      clerkId:userId || undefined
+      clerkId:userId 
     },select:{
       username:true,
       name:true,
