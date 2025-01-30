@@ -1,3 +1,4 @@
+"use client"
 // アカウントの作成、更新でsupabaseと連携するためのエンドポイント
 import { Webhook } from 'svix'
 import { headers } from 'next/headers'
