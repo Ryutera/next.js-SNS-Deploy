@@ -9,10 +9,13 @@ import RightSidebar from '@/components/component/RightSidebar';
 
 const Likes = async () => {
   const { userId } = auth();
+  if (!userId) {
+    return 
+  }
 
   const likes = await prisma.like.findMany({
     where: {
-      userId: userId || undefined, // ログイン中のユーザーの ID
+      userId: userId, // ログイン中のユーザーの ID
     },
     select: {
       id: true, // LikeのID
