@@ -17,6 +17,7 @@ export async function addPostAction(prevState: State, formData:FormData):Promise
         // userIdの確認
     // supabaseでauthor.idの外部リンクをuserのidからclerk.idに変更したら投稿できるようになったけどauth()でとるのはidではなくclerkid?
   const { userId } = auth();
+  console.log(userId)
   
   // userIdが存在しない場合
   if (!userId) {
@@ -30,6 +31,7 @@ export async function addPostAction(prevState: State, formData:FormData):Promise
   const validatedpostTextSchema=postTextSchema.parse(postText)
 
     await prisma.post.create({
+      
       data: {
         content: validatedpostTextSchema,
         authorId: userId,
